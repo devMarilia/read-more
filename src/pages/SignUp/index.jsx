@@ -1,3 +1,4 @@
+import Container from "../SignIn/styles";
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { UserAuth } from "../../context/AuthContext";
@@ -22,7 +23,7 @@ const Signup = () => {
   };
 
   return (
-    <div className="max-w-[700px] mx-auto my-16 p-4">
+    <Container>
       <div>
         <h1 className="text-2xl font-bold py-2">Sign up for a free account</h1>
       </div>
@@ -53,7 +54,7 @@ const Signup = () => {
           Sign in.
         </Link>
       </p>
-    </div>
+    </Container>
   );
 };
 
