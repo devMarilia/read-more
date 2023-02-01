@@ -1,10 +1,10 @@
 import { Routes, Route } from "react-router-dom";
-import ProtectedRoute from "./components/ProtectedRoute";
+import ProtectedRoute from "./helpers/ProtectedRoute";
 
 // Pages
 import Signin from "./pages/SignIn";
 import Signup from "./pages/SignUp";
-import Account from "./components/Account";
+import Account from "./pages/Account";
 
 function MyRoutes() {
   return (

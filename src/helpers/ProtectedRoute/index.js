@@ -6,7 +6,7 @@ const ProtectedRoute = ({ children }) => {
   const { user } = UserAuth();
 
   if (!user) {
-    return "Oie";
+    return "Teste";
   }
   return children;
 };

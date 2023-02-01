@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { UserAuth } from "../../context/AuthContext";
-import Navbar from "../Navbar";
+import Navbar from "../../components/Navbar";
 
 const Account = () => {
   return (
