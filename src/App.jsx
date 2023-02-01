@@ -1,17 +1,17 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import { AuthContextProvider } from "./context/AuthContext";
+import { BrowserRouter } from "react-router-dom";
+import MyRoutes from "./router";
 
 function App() {
-  
-
   return (
-    <div className="App">
-       <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <div>
+      <AuthContextProvider>
+        <BrowserRouter>
+          <MyRoutes />
+        </BrowserRouter>
+      </AuthContextProvider>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
