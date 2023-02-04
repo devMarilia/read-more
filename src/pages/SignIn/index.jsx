@@ -24,11 +24,11 @@ const Signin = () => {
   return (
     <div className="max-w-[700px] mx-auto my-16 p-4">
       <div>
-        <h1 className="text-2xl font-bold py-2">Sign in to your account</h1>
+        <h1 className="text-2xl font-bold py-2">Faça login em sua conta</h1>
       </div>
       <form onSubmit={handleSubmit}>
         <div className="flex flex-col py-2">
-          <label className="py-2 font-medium">Email Address</label>
+          <label className="py-2 font-medium">Email</label>
           <input
             onChange={(e) => setEmail(e.target.value)}
             className="border p-3"
@@ -36,7 +36,7 @@ const Signin = () => {
           />
         </div>
         <div className="flex flex-col py-2">
-          <label className="py-2 font-medium">Password</label>
+          <label className="py-2 font-medium">Senha</label>
           <input
             onChange={(e) => setPassword(e.target.value)}
             className="border p-3"
@@ -48,9 +48,9 @@ const Signin = () => {
         </button>
       </form>
       <p className="py-2">
-        Don't have an account yet?{" "}
+      Não tem uma conta ainda?{" "}
         <Link to="/signup" className="underline">
-          Sign up.
+        Inscrever-se.
         </Link>
       </p>
     </div>
