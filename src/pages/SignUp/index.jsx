@@ -66,7 +66,6 @@ const Signup = () => {
         </div>
         <form onSubmit={handleSubmit}>
           <h2 className="text-lg font-medium mb-4">
-            {" "}
             Inscreva-se para obter um conta grátis
           </h2>
           <div className="mb-4">
