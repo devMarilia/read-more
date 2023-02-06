@@ -25,10 +25,13 @@ const Signin = () => {
 
   return (
     <div class="flex h-screen justify-center items-center">
-      <div className="w-1/2">
+      <div className="w-1/3">
         <img className="" src={image002} />
       </div>
-      <div className="w-1/2 bg-white p-10">
+      <div className="w-1/3 bg-white p-10">
+        <div className="p-10 text-7xl font-bold ">
+          <h1>Read More</h1>
+        </div>
         <form onSubmit={handleSubmit}>
           <h2 className="text-lg font-medium mb-4">Login</h2>
           <div className="mb-4">
