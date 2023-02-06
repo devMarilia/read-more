@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { UserAuth } from "../../context/AuthContext";
-import image001 from "../../assets/images/image01.avif";
+// import image001 from "../../assets/images/image01.avif";
+import image002 from "../../assets/images/image02.gif";
 
 const Signin = () => {
   const [email, setEmail] = useState("");
@@ -23,8 +24,10 @@ const Signin = () => {
   };
 
   return (
-
-    <div className="flex h-screen bg-gray-200">
+    <div class="flex h-screen justify-center items-center">
+      <div className="w-1/2">
+        <img className="" src={image002} />
+      </div>
       <div className="w-1/2 bg-white p-10">
         <form onSubmit={handleSubmit}>
           <h2 className="text-lg font-medium mb-4">Login</h2>
@@ -58,18 +61,15 @@ const Signin = () => {
               onChange={(e) => setPassword(e.target.value)}
             />
           </div>
-          <button className="border border-blue-500 bg-blue-600 hover:bg-blue-500 w-full p-4 my-2 text-white">
+          <button className="border bg-black w-full p-4 my-2 text-white">
             Sign In
           </button>
-          <p className="py-2"/>
-          Não tem uma conta ainda?{" "}
+          <p className="py-2" />
+          Não tem uma conta ainda?
           <Link to="/signup" className="underline">
             Inscrever-se.
           </Link>
         </form>
-      </div>
-      <div className="w-1/2 bg-cover">
-        <img src={image001} />
       </div>
     </div>
   );
