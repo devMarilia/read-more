@@ -2,6 +2,8 @@ import Container from "./styles";
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { UserAuth } from "../../context/AuthContext";
+// import image001 from "../../assets/images/image01.avif";
+import image002 from "../../assets/images/image02.gif";
 
 const Signin = () => {
   const [email, setEmail] = useState("");
@@ -23,40 +25,57 @@ const Signin = () => {
   };
 
   return (
-    <Container>
-      <div className="teste">
-        <div>
-          <h1 className="text-2xl font-bold py-2">Sign in to your account</h1>
+    <div class="flex h-screen justify-center items-center">
+      <div className="w-1/3">
+        <img className="" src={image002} />
+      </div>
+      <div className="w-1/3 bg-white p-10">
+        <div className="p-10 text-7xl font-bold ">
+          <h1>Read More</h1>
         </div>
         <form onSubmit={handleSubmit}>
-          <div className="flex flex-col py-2">
-            <label className="py-2 font-medium">Email Address</label>
+          <h2 className="text-lg font-medium mb-4">Login</h2>
+          <div className="mb-4">
+            <label
+              className="block text-gray-700 font-medium mb-2"
+              for="username"
+            >
+              Usuário
+            </label>
             <input
+              className="border border-gray-400 p-2 w-full"
+              type="text"
+              id="username"
+              name="username"
               onChange={(e) => setEmail(e.target.value)}
-              className="border p-3"
-              type="email"
             />
           </div>
-          <div className="flex flex-col py-2">
-            <label className="py-2 font-medium">Password</label>
+          <div className="mb-4">
+            <label
+              className="block text-gray-700 font-medium mb-2"
+              for="password"
+            >
+              Senha
+            </label>
             <input
-              onChange={(e) => setPassword(e.target.value)}
-              className="border p-3"
+              className="border border-gray-400 p-2 w-full"
               type="password"
+              id="password"
+              name="password"
+              onChange={(e) => setPassword(e.target.value)}
             />
           </div>
-          <button className="border border-blue-500 bg-blue-600 hover:bg-blue-500 w-full p-4 my-2 text-white">
+          <button className="border bg-black w-full p-4 my-2 text-white">
             Sign In
           </button>
-        </form>
-        <p className="py-2">
-          Don't have an account yet?{" "}
+          <p className="py-2" />
+          Não tem uma conta ainda?
           <Link to="/signup" className="underline">
-            Sign up.
+            Inscrever-se.
           </Link>
-        </p>
+        </form>
       </div>
-    </Container>
+    </div>
   );
 };
 
