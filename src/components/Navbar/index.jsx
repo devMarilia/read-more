@@ -20,18 +20,16 @@ function Navbar() {
     <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
       <div class="container flex flex-wrap items-center justify-between mx-auto">
         <a href="https://flowbite.com/" class="flex items-center">
-          <img
-            src="https://flowbite.com/docs/images/logo.svg"
-            class="h-6 mr-3 sm:h-9"
-            alt="Flowbite Logo"
-          />
           <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
-            Flowbite
+            Read More
           </span>
         </a>
         <div class="flex md:order-2 flex-wrap items-center justify-between ">
-          <p className="px-6">{user && user.email}</p>
-          <button onClick={handleLogout} className="border px-6 py-2 my-4">
+          <p className="px-6 text-white">{user && user.email}</p>
+          <button
+            onClick={handleLogout}
+            className="border px-6 py-2 my-4 text-white"
+          >
             Logout
           </button>
         </div>
