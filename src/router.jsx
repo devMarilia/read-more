@@ -10,7 +10,7 @@ function MyRoutes() {
   return (
     <Routes>
       <Route path="/" element={<Signin />} />
-      <Route path="/signup" element={<Signup />} />
+      <Route path="/cadastro" element={<Signup />} />
       <Route
         path="/account"
         element={
