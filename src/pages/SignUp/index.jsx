@@ -23,44 +23,11 @@ const Signup = () => {
   };
 
   return (
-    // <div className="max-w-[700px] mx-auto my-16 p-4">
-    //   <div>
-    //     <h1 className="text-2xl font-bold py-2">Inscreva-se para obter um conta grátis</h1>
-    //   </div>
-    //   <form onSubmit={handleSubmit}>
-    //     <div className="flex flex-col py-2">
-    //       <label className="py-2 font-medium">Email</label>
-    //       <input
-    //         onChange={(e) => setEmail(e.target.value)}
-    //         className="border p-3"
-    //         type="email"
-    //       />
-    //     </div>
-    //     <div className="flex flex-col py-2">
-    //       <label className="py-2 font-medium">Senha</label>
-    //       <input
-    //         onChange={(e) => setPassword(e.target.value)}
-    //         className="border p-3"
-    //         type="password"
-    //       />
-    //     </div>
-    //     <button className="border border-blue-500 bg-blue-600 hover:bg-blue-500 w-full p-4 my-2 text-white">
-    //     Inscrever-se
-    //     </button>
-    //   </form>
-    //   <p className="py-2">
-    //   Já tem uma conta?{" "}
-    //     <Link to="/" className="underline">
-    //     Entrar.
-    //     </Link>
-    //   </p>
-    // </div>
-
-    <div class="flex h-screen justify-center items-center">
+    <div class="bg-white flex h-screen justify-center items-center">
       <div className="w-1/3">
         <img className="" src={image002} />
       </div>
-      <div className="w-1/3 bg-white p-10">
+      <div className="bg-white p-10">
         <div className="p-10 text-7xl font-bold ">
           <h1>Read More</h1>
         </div>
@@ -99,12 +66,14 @@ const Signup = () => {
             />
           </div>
           <button className="border bg-black w-full p-4 my-2 text-white">
-            Sign In
+          <Link to="/account" className="underline">
+            Entrar.
+          </Link>
           </button>
         </form>
         <p className="py-2">
           Já tem uma conta?{" "}
-          <Link to="/" className="underline">
+          <Link to="/account" className="underline">
             Entrar.
           </Link>
         </p>
