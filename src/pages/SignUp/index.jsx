@@ -24,11 +24,11 @@ const Signup = () => {
   };
 
   return (
-    <div class="flex h-screen justify-center items-center">
+    <div class="bg-white flex h-screen justify-center items-center">
       <div className="w-1/3">
         <img className="" src={image002} />
       </div>
-      <div className="w-1/3 bg-white p-10">
+      <div className="bg-white p-10">
         <div className="p-10 text-7xl font-bold ">
           <h1>Read More</h1>
         </div>
