@@ -1,13 +1,11 @@
 import React from "react";
-
+import { InputGeral, LabelGeral } from "./styled";
 function Input({ type, text, name, id, onChange, placeholder }) {
   return (
     <div className="mb-4">
-      <label className="block text-gray-700 font-medium mb-2" htmlFor={name}>
-        {text}
-      </label>
-      <input
-        className="border border-gray-400 p-2 w-full"
+      <LabelGeral htmlFor={name}>{text}</LabelGeral>
+
+      <InputGeral
         type={type}
         name={name}
         id={name}

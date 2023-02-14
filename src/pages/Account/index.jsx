@@ -10,9 +10,8 @@ const Account = () => {
       <Navbar />
       <div class="flex justify-center items-center flex-col font-bold py-4">
         <h1 className="text-2xl font-bold py-4">Read More</h1>
-        <Tab/>
+        <Tab />
       </div>
-    
     </>
   );
 };
